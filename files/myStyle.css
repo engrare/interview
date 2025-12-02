@@ -3,7 +3,7 @@
 body {
 	height: 100vh;
     margin: 0px !important;
-	color: white;
+	color: black;
 	font-family: Atkinson Hyperlegible, sans-serif;
 }
 
@@ -50,7 +50,9 @@ p {
 }
 
 .main_div {
+	background-image: linear-gradient(to right, #fcdda6, #f5bba7);
 	width: 100%;
+	overflow-x: hidden;
 	height: 100%;
 	position: relative;
 	z-index: 0;
@@ -60,7 +62,6 @@ p {
 }
 
 .fixed_menu_space {
-	display: block;
 	width: 100%;
 	height: 40px;
 }
@@ -80,8 +81,7 @@ p {
 	top: 0;
 	width: 100%;
 	height: 40px;
-	background: #000000;
-    box-shadow: 0px 4px 0px 0px rgb(13 57 82 / 46%);
+	background: #fee6cc;
 	z-index: 10;
 }
 
@@ -89,7 +89,7 @@ p {
 .fixed_menu_cont {
 	height: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .fixed_menu_button {
@@ -101,19 +101,35 @@ p {
 }
 
 .fixed_menu_button_selected {
-	text-decoration: underline 3px;
+	color: #bd8260;
+	text-shadow: 1px 1px 10px #bd8260b5;
+}
+
+.fixed_menu_selected_space {
+	background: none;
+	width: 100%;
+	height: 4px;
+	position: relative;
+	
+}
+
+.fixed_menu_selected_underline {
+	background: #bd8260;
+	border-radius: 10px 10px 0px 0px;
+	width: calc(100% + 28px);
+	height: 4px;
+	position: relative;
 }
 
 .fixed_menu_left_cont {
 	display: flex;
-	border-radius: 0px 10px 10px 0px;
 	overflow: hidden;
 }
 
 .fixed_menu_right_cont {
-	border-radius: 10px 0px 0px 10px;
+	display: flex;
 	overflow: hidden;
-	display: none;
+	cursor: pointer;
 }
 
 .notification_num {
@@ -121,12 +137,14 @@ p {
     top: 8px;
     right: -4px;
 	border-radius: 20px;
-	height: 13px;
-	width: 13px;
-	font-size: 13px;
+	height: 14px;
+	width: 14px;
+	font-size: 12px;
 	display: flex;
 	align-items: center;
     justify-content: center;
+	background-color: #bd8260;
+	color: white;
 }
 
 /*.fixed_menu_button:hover {

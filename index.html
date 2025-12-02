@@ -1,9 +1,9 @@
-<!-- Copyright 2023 Kaya Sertel. All Rights Reserved.  -->
+<!--Copyright 2025 Kaya Sertel & ENGRARE®. All Rights Reserved.-->
 <!DOCTYPE html>
 <html  lang="tr" dir="ltr" data-cast-api-enabled="true">
 <head>
-<title>Engrare</title>
-<link rel="icon" href="./files/photos/title_icon.png" type="image/gif" sizes="48x48">
+<title>ENGRARE-Interview</title>
+<link rel="icon" href="https://www.engrare.com/files/photos/engrare_logo.png" type="image/gif" sizes="48x48">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0, minimum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://www.engrare.com/files/photos/title_icon.png" />
@@ -86,105 +86,65 @@
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-light.css">
-
+	<script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
 <script src="files/myScript.js"></script>
 <link rel="stylesheet" href="files/myStyle.css">
+
 
 
 </head>
 
 <body>
-
-<!--<div class="fixed_menu_top"></div>-->
-<div class="menu_closer" onclick="openLeftMenu()"></div>
-
-<div class="fixed_menu_top noselect">
+<div class="fixed_menu_top">
 	<div class="fixed_menu_cont">
+		<div class="fixed_menu_logo_part" onclick="ScrollPart(1)">
+			<img src="./files/photos/engrare_logo.png" height="80%" alt="Engrare Logo">
+			<div class="fixed_menu_logo_text_part">
+				<p class="fixed_menu_logo_text">Engrare</p>
+				<hr class="fixed_menu_logo_hr">
+				<p class="fixed_menu_logo_text">Futuristic Tech</p>
+			</div>
+		</div>
 		<div class="fixed_menu_left_cont">
 			<div class="fixed_menu_button bar_button" onclick="openLeftMenu()">
 				<i class="fa fa-bars menu_opener"></i>
 			</div>
 			<div class="fixed_menu_all_buttons_cont">
-				<div class="fixed_menu_button fixed_menu_buttons_left" onclick="">
-					<p>Websitesine Git</p>
+				<div class="fixed_menu_button fixed_menu_buttons_left fixed_menu_button_selected" style="flex-direction: column;">
+					<div class="fixed_menu_selected_space">
+					</div>
+					<p>Ana Sayfa</p>
+					<div class="fixed_menu_selected_underline">
+					</div>
 				</div>
-				<div class="fixed_menu_button fixed_menu_buttons_left fixed_menu_button_selected" id="fixed_menu_but_2">
-					<p>API Sayfası</p>
+				<div class="fixed_menu_button fixed_menu_buttons_left" onclick="window.location.href = 'https://www.engrare.com/products'">
+					<p>Soru Çöz</p>
 				</div>
-				<div class="fixed_menu_button fixed_menu_buttons_left" id="fixed_menu_but_3">
-					<p>Websitesi Düzeni</p>
-				</div>
-				<div class="fixed_menu_button fixed_menu_buttons_left" id="fixed_menu_but_4">
-					<p>Sosyal Medya</p>
-				</div>
-				<div class="fixed_menu_button fixed_menu_buttons_left" id="fixed_menu_but_5">
-					<p>RoboControl</p>
+				<div class="fixed_menu_button fixed_menu_buttons_left" onclick="window.location.href = 'https://www.engrare.com/our_team'">
+					<p>Profil</p>
 				</div>
 			</div>
 			
 		</div>
-		<div class="fixed_menu_logo_part">
-			<img src="./files/photos/engrare_logo.png" height="80%">
-			<div class="fixed_menu_logo_text_part">
-				<p class="fixed_menu_logo_text">Engrare</p>
-				<hr class="fixed_menu_logo_hr" />
-				<p class="fixed_menu_logo_text">Interview</p>
+		<div class="fixed_menu_right_cont" onclick="GoToSettingsPage()">
+			<div class="fixed_menu_button fixed_menu_button_3">
+			<div class="notification_num">3</div>
+				<i class="fa fa-bell notification_bell"></i>
 			</div>
-		</div>
-		<div class="fixed_menu_right_cont" onClick="menuState(2)">
 			<div class="fixed_menu_button fixed_menu_button_3">
 			<!--<div class="notification_num">3</div>
 				<i class="fa fa-bell notification_bell"></i>-->
-				<div class="notification_num"><i class="fa-solid fa-gear settings_button_top"></i></div>
-			<i class="fa-solid fa-gear settings_button_top"></i> 
+			<i class="fa-solid fa-user"></i>
 			</div>
 		</div>
 			
 	</div>
 </div>
-	
-	
 
 <div class="main_div">
-
-		<div class="fixed_menu_space"></div>
-
-
-<div class="main_container">
-<div class="main_container_outer">
-	<div class="main_menu_content_outer" onclick="window.open('./worded');">
-				<div class="main_container_inner_bg">
-					<i class="fa-duotone fa-browser"></i>
-				</div>
-				<div class="main_container_inner_text">
-	 				 <h2>Worded</h2>
-				</div>
-				
-			
-			
-			</div>
-		<div class="main_menu_content_outer" onclick="window.open('./worded');">
-				<div class="main_container_inner_bg">
-					<i class="fa-duotone fa-browser"></i>
-				</div>
-				<div class="main_container_inner_text">
-	 				 <h2>ÇOK YAKINDA</h2>
-				</div>
-				
-			
-			
-			</div>
-</div>
-</div>
-	<div class="copywrite_part">
-<p class="copywrite_text">Bu websitesinin tüm hakları Kaya Sertel ve <b>Engrare©®™</b> ekibine aittir. 3. kişilerin kullanımına kapalıdır.</p>
-</div>
-
-
+burdaaa
 
 </div>
-
 
 </body>
-
 </html>
